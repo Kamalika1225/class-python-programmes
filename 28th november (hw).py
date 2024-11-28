@@ -26,7 +26,7 @@ class Employee:
         print("Salary:", self.salary)
 class Manager(Employee):
     def __init__(self, name, salary, department):
-        super().__init__(self, name, salary)  
+        Employee.__init__(self, name, salary)  
         self.department = department  
     def display_department(self):
         print("Department:", self.department)
